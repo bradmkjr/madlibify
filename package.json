@@ -1,7 +1,7 @@
 {
-  "name": "madlibify",
-  "version": "1.0.1",
-  "description": "simple module for creating a madlibs-like game :-)",
+  "name": "phrasejumble",
+  "version": "1.1.1",
+  "description": "simple module for creating a madlibs-like game or randomish strings",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -17,5 +17,9 @@
     "test": "tap test/*.js"
   },
   "author": "Raquel Vélez <raquel@rckbt.me>",
+  "contributors": [
+    "Raquel Vélez <raquel@rckbt.me>",
+    "Bradford Knowlton",
+  ],
   "license": "ISC"
 }
