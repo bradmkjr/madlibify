@@ -33,9 +33,9 @@ console.log(madlibs); // The quick blue truck jumps over the lazy tree
 
 ### Version 2
 ```js
-var text = "The quick {{color1:color2:color3}} {{noun1:noun2}} jumps over the lazy {{noun3:noun4:noun5}}";
+var text = "The quick {{color1|color2|color3}} {{noun1|noun2}} jumps over the lazy {{noun3|noun4|noun5}}";
 
-var jumble = pj.jumble(text);
+var jumble = pj.build(text);
 console.log(jumble); // Randomized Output: The quick color2 noun2 jumps over the lazy noun3
 
 ```

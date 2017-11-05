@@ -32,9 +32,10 @@ test('it takes a handlebars-y string and compiles the object', function (t) {
 });
 
 test('it takes a handlebars-y string and compiles a random object', function (t) {
-  var str = "The quick {{black:red:green}} {{cat:dog:mouse:cow}} jumps over the lazy {{stool:house:moon}}";
+  var str = "The quick {{black|dark red|green}} {{cat|dog|mouse|fat cow}} jumps over the lazy {{stool|house|big moon}}";
   
-  var text = pj.jumble(str);
+  var text = pj.build(str);
   t.notEqual(text, 'The quick brown fox jumps over the lazy dog');
   t.end();
 });
+

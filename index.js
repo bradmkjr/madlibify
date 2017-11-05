@@ -15,15 +15,12 @@ pj.parse = function (str) {
   return matches;
 }
 
-pj.jumble = function (str) {
-  var matches = str.match(/{{([^}]+)}}/g);
-  var replacements = {};
-  var matches = _.map(matches, function (str) { 
-  	phrases = _.trim(str, '{}').split(':');
-  	var random = phrases[ getRandomRange( 0, phrases.length ) ];
-  	replacements[_.trim(str, '{}')] = random;
-  });
-  return this.compile(str, replacements);
+pj.build = function (str) {
+  var text = str.replace(/{{([^}]+)}}/g, function(match){    
+    phrases = _.trim(match, '{}').split('|');
+    return phrases[ getRandomRange( 0, phrases.length ) ];
+  }); 
+  return text;
 }
 
 function getRandomRange(min, max) {
