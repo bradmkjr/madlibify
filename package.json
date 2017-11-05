@@ -1,6 +1,6 @@
 {
   "name": "phrasejumble",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "simple module for creating a madlibs-like game or randomish strings",
   "main": "index.js",
   "directories": {
@@ -19,7 +19,7 @@
   "author": "Raquel Vélez <raquel@rckbt.me>",
   "contributors": [
     "Raquel Vélez <raquel@rckbt.me>",
-    "Bradford Knowlton",
+    "Bradford Knowlton"
   ],
   "license": "ISC"
 }
