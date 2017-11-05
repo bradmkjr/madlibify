@@ -1,5 +1,5 @@
-# Madlibify
-Create your own [madlibs](https://en.wikipedia.org/wiki/Mad_Libs) word game!
+# Phrase Jumble
+Create your own [madlibs](https://en.wikipedia.org/wiki/Mad_Libs) word game! or randomish phrases
 
 ## To use Original Version
 ```js
